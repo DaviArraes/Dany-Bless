@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dany Bless | Treinamentos e Consultoria — Daniella Arraes</title>
+<meta name="description" content="Dany Bless Treinamentos e Consultoria, de Daniella Arraes: desenvolvimento de pessoas, liderança e resultados para organizações.">
+<meta name="theme-color" content="#0b0d10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="logostart.jpg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap">
+    <button class="filter-btn" id="openSearch" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span data-i18n="top.filter">Filtrar por</span>
+    </button>
+    <div class="top-right">
+      <div class="socials">
+        <a href="https://www.instagram.com/daniellaarraes.ma/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.linkedin.com/in/daniellaarraes/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h3v11H4zM5.5 4a1.7 1.7 0 1 1 0 3.4A1.7 1.7 0 0 1 5.5 4zM10 9h3v1.6c.5-1 1.7-1.9 3.4-1.9 3 0 3.6 2 3.6 4.6V20h-3v-5.8c0-1.4 0-3-1.9-3s-2.1 1.4-2.1 2.9V20h-3z"/></svg></a>
+        <a href="https://wa.me/5598987065352" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+      </div>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button data-lang="pt" aria-pressed="true">PT</button><i></i>
+        <button data-lang="en" aria-pressed="false">EN</button><i></i>
+        <button data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main" id="header">
+  <div class="wrap">
+    <a href="#topo" class="brand" aria-label="Dany Bless">
+      <img src="assets/logo-mono.png" alt="">
+      <div><span>DANY BLESS</span><small data-i18n="brand.sub">Treinamentos e Consultoria</small></div>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    <nav class="primary" id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#quem-somos"><span data-i18n="nav.about">Quem Somos</span><svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m1 3 4 4 4-4"/></svg></a>
+          <ul class="dd">
+            <li><a href="#missao" data-i18n="nav.about.mission">Missão, visão e valores</a></li>
+            <li><a href="#objetivos" data-i18n="nav.about.goals">Objetivos institucionais</a></li>
+            <li><a href="#equipe" data-i18n="nav.about.team">Fundadora</a></li>
+            <li><a href="#trajetoria" data-i18n="nav.about.path">Trajetória</a></li>
+            <li><a href="#lideranca" data-i18n="nav.about.lead">Como lidero</a></li>
+          </ul></li>
+        <li><a href="#servicos"><span data-i18n="nav.services">Serviços</span><svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m1 3 4 4 4-4"/></svg></a>
+          <ul class="dd">
+            <li><a href="#servicos" data-i18n="nav.services.areas">Áreas de atuação</a></li>
+            <li><a href="#metodologia" data-i18n="nav.services.method">Metodologia</a></li>
+          </ul></li>
+        <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#faca-parte"><span data-i18n="nav.join">Faça parte</span><svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m1 3 4 4 4-4"/></svg></a>
+          <ul class="dd">
+            <li><a href="#faca-parte" data-i18n="join.1">Contratar um treinamento</a></li>
+            <li><a href="#faca-parte" data-i18n="join.2">Ser parceiro</a></li>
+            <li><a href="#faca-parte" data-i18n="join.3">Participar das turmas</a></li>
+            <li><a href="#faca-parte" data-i18n="join.4">Trabalhar com a gente</a></li>
+          </ul></li>
+        <li><a href="#conteudos"><span data-i18n="nav.read">Informe-se</span><svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m1 3 4 4 4-4"/></svg></a>
+          <ul class="dd">
+            <li><a href="#conteudos" data-i18n="nav.read.articles">Artigos e conteúdos</a></li>
+            <li><a href="https://www.instagram.com/daniellaarraes.ma/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul></li>
+        <li><a href="#compromisso" data-i18n="nav.ethics">Compromisso</a></li>
+        <li><a class="btn solid nav-cta" href="https://wa.me/5598987065352" target="_blank" rel="noopener" data-i18n="nav.cta">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+<!-- HERO -->
+<section class="hero" id="hero" aria-roledescription="carousel">
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <img class="mark" id="mark" src="assets/logo-mono.png" alt="" aria-hidden="true">
+  <figure class="hero-photo" aria-hidden="false"><img id="heroPhoto" src="assets/foto-daniella-1.jpg" alt="Daniella Arraes"><span class="hp-frame"></span></figure>
+  <div class="slides">
+    <div class="slide active" role="group" aria-label="1">
+      <div class="wrap">
+        <div class="eyebrow" data-i18n="hero.eyebrow">Dany Bless · Daniella Arraes</div>
+        <h1 data-i18n-html="hero1.t">Desenvolvemos <em>pessoas</em> e transformamos resultados.</h1>
+        <p class="lead" data-i18n="hero1.p">Treinamentos e consultoria sob medida para líderes, equipes e organizações que querem evoluir com consistência.</p>
+        <div class="actions">
+          <a class="btn solid" href="#servicos"><span data-i18n="hero.cta1">Conheça nossas soluções</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="btn" href="https://wa.me/5598987065352" target="_blank" rel="noopener"><span data-i18n="hero.cta2">Agende uma conversa</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="slide" role="group" aria-label="2">
+      <div class="wrap">
+        <div class="eyebrow" data-i18n="hero.eyebrow2">Treinamentos e Consultoria</div>
+        <h2 class="big" data-i18n-html="hero2.t">Liderança, comunicação e <em>performance</em> com propósito.</h2>
+        <p class="lead" data-i18n="hero2.p">Experiências de aprendizado práticas, humanas e orientadas a resultados para o seu negócio.</p>
+        <div class="actions">
+          <a class="btn solid" href="#quem-somos"><span data-i18n="hero.cta3">Conheça a Dany Bless</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-ui"><div class="wrap">
+    <div class="dots" id="dots"><button aria-label="1"><i></i></button><button aria-label="2"><i></i></button></div>
+    <div class="arrows">
+      <button id="prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 5-7 7 7 7"/></svg></button>
+      <button id="next" aria-label="Próximo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 5 7 7-7 7"/></svg></button>
+    </div>
+  </div></div>
+  <div class="scroll-cue" data-i18n="hero.scroll">Role</div>
+</section>
+
+<!-- O QUE FAZEMOS -->
+<section class="light pad" id="o-que-fazemos">
+  <div class="wrap what">
+    <div class="rv rv-l s-item" data-group="about" data-title="o que fazemos what we do">
+      <div class="eyebrow" data-i18n="what.eyebrow">Dany Bless</div>
+      <h2 class="sec-title" data-i18n-html="what.h">O que <em>fazemos</em></h2>
+      <p data-i18n-html="what.p1">A <strong>Dany Bless Treinamentos e Consultoria</strong> une conhecimento, método e sensibilidade para desenvolver <strong>líderes e equipes de alto desempenho</strong>.</p>
+      <p data-i18n-html="what.p2">Criamos <strong>programas sob medida</strong> que conectam pessoas, cultura e estratégia dentro de cada organização.</p>
+      <p data-i18n-html="what.p3">Somos parceiras na <strong>construção de resultados sustentáveis</strong>, do diagnóstico ao acompanhamento.</p>
+      <a class="btn dark" href="#servicos"><span data-i18n="what.cta">Conheça nossas soluções</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </div>
+    <div class="visual rv rv-r" id="visual1">
+      <div class="glow"></div>
+      <!-- A foto vem de CONFIG.photo em js/data.js -->
+      <img class="logo" src="assets/logo-full.png" alt="Dany Bless — Daniella Arraes — Treinamentos e Consultoria">
+    </div>
+  </div>
+</section>
+
+<!-- NÚMEROS -->
+<section class="stats" aria-label="Números">
+  <div class="wrap"><ul id="stats">
+    <li class="rv"><b>0</b><span data-i18n="stat.1">anos de experiência</span></li>
+    <li class="rv" style="--d:.08s"><b>0</b><span data-i18n="stat.2">municípios alcançados</span></li>
+    <li class="rv" style="--d:.16s"><b>0</b><span data-i18n="stat.3">profissionais liderados</span></li>
+    <li class="rv" style="--d:.24s"><b>0</b><span data-i18n="stat.4">carteira gerenciada por mês</span></li>
+    <li class="rv" style="--d:.32s"><b>0</b><span data-i18n="stat.5">inadimplência mantida</span></li>
+  </ul>
+  <p class="stats-note rv" data-i18n="stat.note">Programas sociais e públicos de grande impacto em segurança alimentar, inclusão produtiva e desenvolvimento territorial.</p></div>
+</section>
+
+<!-- BANNERS -->
+<section class="banners" aria-label="Destaques">
+  <article class="banner b1 rv"><div class="bg"></div><div class="num">01</div>
+    <h3 data-i18n="ban.1">Treinamentos corporativos sob medida</h3>
+    <a href="#servicos"><span data-i18n="ban.1c">Conheça os treinamentos</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article>
+  <article class="banner b2 rv" style="--d:.1s"><div class="bg"></div><div class="num">02</div>
+    <h3 data-i18n="ban.2">Consultoria para evoluir cultura e desempenho</h3>
+    <a href="#projetos"><span data-i18n="ban.2c">Conheça a consultoria</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article>
+  <article class="banner b3 rv"><div class="bg"></div><div class="num">03</div>
+    <h3 data-i18n="ban.3">Metodologia prática, humana e orientada a resultados</h3>
+    <a href="#metodologia"><span data-i18n="ban.3c">Veja como trabalhamos</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article>
+  <article class="banner b4 rv" style="--d:.1s"><div class="bg"></div><div class="num">04</div>
+    <h3 data-i18n="ban.4">Vamos construir o próximo passo da sua equipe</h3>
+    <a href="https://wa.me/5598987065352" target="_blank" rel="noopener"><span data-i18n="ban.4c">Agende uma conversa</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article>
+</section>
+
+<!-- QUEM SOMOS -->
+<section class="light pad" id="quem-somos">
+  <div class="wrap about-grid">
+    <div class="rv rv-l s-item" data-group="about" data-title="quem somos about us">
+      <div class="eyebrow" data-i18n="about.eyebrow">Nossa essência</div>
+      <h2 class="sec-title" data-i18n-html="about.h">Quem <em>somos</em></h2>
+      <p style="font-size:1.15rem;color:#34312a" data-i18n="about.p"></p>
+      <p style="color:#4a463a" data-i18n="about.p2"></p>
+      <p style="color:#4a463a" data-i18n="about.p3"></p>
+    </div>
+    <div class="rv rv-r" id="missao">
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" data-tab="t1" data-i18n="tab.1">Missão</button>
+        <button role="tab" aria-selected="false" data-tab="t2" data-i18n="tab.2">Visão</button>
+        <button role="tab" aria-selected="false" data-tab="t3" data-i18n="tab.3">Valores</button>
+      </div>
+      <div class="panel active" id="t1" role="tabpanel"><p data-i18n="mission.p">Desenvolver pessoas e organizações por meio de treinamentos e consultoria que unem excelência técnica e sensibilidade humana, gerando resultados duradouros.</p></div>
+      <div class="panel" id="t2" role="tabpanel"><p data-i18n="vision.p">Ser referência em desenvolvimento humano e organizacional, reconhecida pela qualidade do trabalho e pelos resultados que ajuda a construir.</p></div>
+      <div class="panel" id="t3" role="tabpanel"><ul class="values">
+        <li data-i18n="val.1">Ética e confiança</li><li data-i18n="val.2">Excelência</li><li data-i18n="val.3">Empatia</li>
+        <li data-i18n="val.4">Compromisso com resultados</li><li data-i18n="val.5">Aprendizado contínuo</li><li data-i18n="val.6">Respeito às pessoas</li></ul></div>
+
+      <div class="team-card s-item" id="equipe" data-group="about" data-title="daniella arraes fundadora founder">
+        <div class="ph" id="phSlot"><img src="assets/logo-mono.png" alt=""></div>
+        <div>
+          <h4>Daniella Arraes</h4>
+          <span class="role" data-i18n="team.role">Fundadora e consultora</span>
+          <span class="reg" data-i18n="team.reg">Administradora | CRA/MA nº 6840</span>
+          <p data-i18n="team.p">Fundadora da Dany Bless, atua com treinamentos e consultoria dedicados ao desenvolvimento de pessoas e organizações.</p>
+          <a class="in" href="https://www.linkedin.com/in/daniellaarraes/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h3v11H4zM5.5 4a1.7 1.7 0 1 1 0 3.4A1.7 1.7 0 0 1 5.5 4zM10 9h3v1.6c.5-1 1.7-1.9 3.4-1.9 3 0 3.6 2 3.6 4.6V20h-3v-5.8c0-1.4 0-3-1.9-3s-2.1 1.4-2.1 2.9V20h-3z"/></svg>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap goals" id="objetivos">
+    <div class="goal rv"><b>01</b><p data-i18n="goal.1">Elevar a qualidade da liderança e da comunicação nas organizações.</p></div>
+    <div class="goal rv" style="--d:.1s"><b>02</b><p data-i18n="goal.2">Criar programas de aprendizado práticos, aplicáveis e mensuráveis.</p></div>
+    <div class="goal rv" style="--d:.2s"><b>03</b><p data-i18n="goal.3">Acompanhar cada cliente até a consolidação dos resultados.</p></div>
+  </div>
+</section>
+
+<!-- TRAJETÓRIA -->
+<section class="dark pad" id="trajetoria">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i18n="path.eyebrow">Trajetória</div>
+      <h2 class="sec-title" data-i18n-html="path.h">Uma jornada de liderança em gestão pública e <em>desenvolvimento social</em></h2></div>
+    <ol class="timeline">
+<li class="tl rv" style="--d:0.00s"><time>1995 – 2011</time><h3>CEAPE Brasil</h3><p data-i18n="path.1.d"></p></li>
+<li class="tl rv" style="--d:0.07s"><time>2016 – 2019</time><h3>SETRES</h3></li>
+<li class="tl rv" style="--d:0.14s"><time>2019 – 2022</time><h3>SEDES</h3><p data-i18n="path.3.d"></p></li>
+<li class="tl rv" style="--d:0.21s"><time>2021 – 2025</time><h3>SENAR Maranhão</h3><p data-i18n="path.4.d"></p></li>
+<li class="tl rv" style="--d:0.28s"><time>2021 – <span data-i18n="path.now">Atual</span></time><h3>Dany Bless</h3><p data-i18n="path.5.d"></p></li>
+<li class="tl rv" style="--d:0.35s"><time>2022 – 2023</time><h3>SEGOV</h3><p data-i18n="path.6.d"></p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ESPECIALIZAÇÃO -->
+<section class="light pad" id="especializacao">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i18n="spec.eyebrow">Áreas de especialização</div>
+      <h2 class="sec-title" data-i18n-html="spec.h">Onde geramos <em>mais valor</em></h2></div>
+    <div class="specs">
+      <div class="spec rv s-item" data-group="about" style="--d:0.00s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><b data-i18n="spec.1"></b></div>
+      <div class="spec rv s-item" data-group="about" style="--d:0.07s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></span><b data-i18n="spec.2"></b></div>
+      <div class="spec rv s-item" data-group="about" style="--d:0.14s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5M16 5.2a3.5 3.5 0 0 1 0 6.6M18 14.8c2 .6 3.2 2.2 3.5 5.2"/></svg></span><b data-i18n="spec.3"></b></div>
+      <div class="spec rv s-item" data-group="about" style="--d:0.21s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></span><b data-i18n="spec.4"></b></div>
+      <div class="spec rv s-item" data-group="about" style="--d:0.00s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M16.5 7.5C15.6 6.3 14 5.7 12 5.7c-2.5 0-4 1.2-4 3 0 4.2 8.5 2 8.5 6.4 0 1.9-1.8 3.2-4.5 3.2-2.2 0-3.9-.7-4.8-2"/></svg></span><b data-i18n="spec.5"></b></div>
+      <div class="spec rv s-item" data-group="about" style="--d:0.07s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 11h6M9 15h6"/></svg></span><b data-i18n="spec.6"></b></div>
+      <div class="spec rv s-item" data-group="about" style="--d:0.14s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><b data-i18n="spec.7"></b></div>
+      <div class="spec rv s-item" data-group="about" style="--d:0.21s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M3 13h18"/></svg></span><b data-i18n="spec.8"></b></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="dark pad" id="servicos">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="rv"><div class="eyebrow" data-i18n="serv.eyebrow">Áreas de atuação</div>
+        <h2 class="sec-title" data-i18n-html="serv.h">Soluções que <em>desenvolvem</em> pessoas</h2></div>
+      <p class="rv" data-i18n="serv.p">Cada projeto é desenhado a partir da realidade do cliente, com linguagem clara, método e foco em resultados.</p>
+    </div>
+    <div class="cards" id="cards">
+      <article class="card rv s-item" data-group="services" data-title="treinamentos corporativos corporate training"><span class="idx">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10.5V15c0 1.4 2.2 3 5 3s5-1.6 5-3v-4.5"/></svg></div>
+        <h3 data-i18n="sv.1.t">Treinamentos corporativos</h3><p data-i18n="sv.1.p">Programas presenciais e online, sob medida para a realidade da sua empresa.</p></article>
+      <article class="card rv s-item" data-group="services" data-title="consultoria organizacional consulting" style="--d:.08s"><span class="idx">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3 data-i18n="sv.2.t">Consultoria organizacional</h3><p data-i18n="sv.2.p">Diagnóstico, plano de ação e acompanhamento para evoluir cultura e processos.</p></article>
+      <article class="card rv s-item" data-group="services" data-title="liderança gestão de equipes leadership" style="--d:.16s"><span class="idx">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-3-5.3 3 1.1-6L3.4 9.4l6-.8z"/></svg></div>
+        <h3 data-i18n="sv.3.t">Liderança e gestão de equipes</h3><p data-i18n="sv.3.p">Desenvolvimento de líderes para inspirar, decidir e entregar resultados.</p></article>
+      <article class="card rv s-item" data-group="services" data-title="comunicação oratória communication" style="--d:.0s"><span class="idx">04</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <h3 data-i18n="sv.4.t">Comunicação e oratória</h3><p data-i18n="sv.4.p">Comunicação clara, presença e influência em qualquer contexto.</p></article>
+      <article class="card rv s-item" data-group="services" data-title="palestras workshops talks" style="--d:.08s"><span class="idx">05</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+        <h3 data-i18n="sv.5.t">Palestras e workshops</h3><p data-i18n="sv.5.p">Experiências inspiradoras e práticas para eventos e equipes.</p></article>
+      <article class="card rv s-item" data-group="services" data-title="mentoria desenvolvimento individual mentoring" style="--d:.16s"><span class="idx">06</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5M16 5.2a3.5 3.5 0 0 1 0 6.6M18 14.8c2 .6 3.2 2.2 3.5 5.2"/></svg></div>
+        <h3 data-i18n="sv.6.t">Mentoria e desenvolvimento individual</h3><p data-i18n="sv.6.p">Acompanhamento personalizado para carreira e performance.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- METODOLOGIA -->
+<section class="method pad" id="metodologia">
+  <div class="wrap">
+    <div class="rv s-item" data-group="services" data-title="metodologia methodology"><div class="eyebrow" data-i18n="met.eyebrow">Metodologia</div>
+    <h2 class="sec-title" data-i18n-html="met.h">Do diagnóstico ao <em>resultado</em></h2></div>
+    <ol class="steps">
+      <li class="rv"><h4 data-i18n="st.1.t">Escuta e diagnóstico</h4><p data-i18n="st.1.p">Entendemos o contexto, os desafios e os objetivos da sua organização.</p></li>
+      <li class="rv" style="--d:.1s"><h4 data-i18n="st.2.t">Desenho da solução</h4><p data-i18n="st.2.p">Construímos um programa sob medida, com metas claras e conteúdo aplicável.</p></li>
+      <li class="rv" style="--d:.2s"><h4 data-i18n="st.3.t">Aplicação prática</h4><p data-i18n="st.3.p">Treinamentos dinâmicos, com vivências e ferramentas para o dia a dia.</p></li>
+      <li class="rv" style="--d:.3s"><h4 data-i18n="st.4.t">Acompanhamento</h4><p data-i18n="st.4.p">Avaliamos resultados e apoiamos a consolidação das mudanças.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- LIDERANÇA -->
+<section class="light pad" id="lideranca">
+  <div class="wrap lead-grid">
+    <div class="rv rv-l">
+      <div class="eyebrow" data-i18n="lead.eyebrow">Competências</div>
+      <h2 class="sec-title" data-i18n-html="lead.h">Como eu <em>lidero</em></h2>
+      <ul class="lead-list">
+        <li data-i18n="lead.1">Liderança humanizada</li><li data-i18n="lead.2">Gestão por resultados</li>
+        <li data-i18n="lead.3">Articulação institucional</li><li data-i18n="lead.4">Planejamento estratégico</li>
+        <li data-i18n="lead.5">Inovação social</li>
+      </ul>
+    </div>
+    <div class="mosaic rv rv-r">
+      <img src="assets/projects/lideranca-1.jpg" alt="Daniella Arraes em palestra" loading="lazy">
+      <img src="assets/projects/lideranca-2.jpg" alt="Daniella Arraes recebendo certificado" loading="lazy">
+      <img src="assets/projects/lideranca-3.jpg" alt="Daniella Arraes em apresentação" loading="lazy">
+      <img class="wide" src="assets/projects/lideranca-4.jpg" alt="Equipe reunida com os braços erguidos" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section class="projects pad" id="projetos">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="rv"><div class="eyebrow" data-i18n="proj.eyebrow">Portfólio</div>
+        <h2 class="sec-title" data-i18n-html="proj.h">Projetos e <em>realizações</em></h2></div>
+      <p class="rv" data-i18n="proj.p">Trabalhos que mostram, na prática, como desenvolvemos pessoas e organizações.</p>
+    </div>
+    <div class="proj-filters" id="projFilters" role="group"></div>
+    <div class="proj-grid" id="projGrid"></div>
+    <div class="proj-empty" id="projEmpty" hidden>
+      <img src="assets/logo-mono.png" alt="">
+      <p data-i18n="proj.empty">Estamos organizando o portfólio de projetos. Em breve, todos os trabalhos aparecerão aqui.</p>
+      <a class="btn" href="https://www.linkedin.com/in/daniellaarraes/" target="_blank" rel="noopener"><span data-i18n="proj.empty.cta">Ver projetos no LinkedIn</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="pmodal" id="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmTitle" hidden>
+  <div class="pm-box">
+    <button class="close" id="pmClose" aria-label="Fechar">×</button>
+    <div class="pm-media"><img id="pmImg" alt=""><div class="pm-thumbs" id="pmThumbs"></div></div>
+    <div class="pm-body">
+      <span class="cat" id="pmCat"></span><span class="pm-year" id="pmYear"></span>
+      <h3 id="pmTitle"></h3>
+      <em class="pm-role" id="pmRole"></em>
+      <p id="pmText"></p>
+      <div class="pm-extra" id="pmExtra"></div>
+      <a class="btn" id="pmLink" target="_blank" rel="noopener" hidden><span data-i18n="proj.visit">Ver projeto</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- DEPOIMENTOS -->
+<section class="testi pad" id="depoimentos">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i18n="test.eyebrow">Depoimentos</div>
+      <h2 class="sec-title" data-i18n-html="test.h">Vidas transformadas <em>pela educação</em></h2></div>
+    <div class="test-grid" id="testGrid"></div>
+  </div>
+</section>
+
+<!-- FAÇA PARTE -->
+<section class="light pad" id="faca-parte">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i18n="join.eyebrow">Conecte-se</div>
+    <h2 class="sec-title" data-i18n-html="join.h">Faça parte <em>dessa rede</em></h2></div>
+    <div class="join-grid">
+      <a class="join rv s-item" data-group="join" data-title="contratar treinamento hire" data-wa="join.msg.1" href="#"><h4 data-i18n="join.1">Contratar um treinamento</h4><span><span data-i18n="join.go">Fale conosco</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a>
+      <a class="join rv s-item" data-group="join" data-title="parceiro partner" data-wa="join.msg.2" href="#" style="--d:.08s"><h4 data-i18n="join.2">Ser parceiro</h4><span><span data-i18n="join.go">Fale conosco</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a>
+      <a class="join rv s-item" data-group="join" data-title="turmas participar classes" data-wa="join.msg.3" href="#" style="--d:.16s"><h4 data-i18n="join.3">Participar das turmas</h4><span><span data-i18n="join.go">Fale conosco</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a>
+      <a class="join rv s-item" data-group="join" data-title="trabalhar conosco work with us" data-wa="join.msg.4" href="#" style="--d:.24s"><h4 data-i18n="join.4">Trabalhar com a gente</h4><span><span data-i18n="join.go">Fale conosco</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDOS -->
+<section class="dark pad" id="conteudos">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="rv"><div class="eyebrow" data-i18n="art.eyebrow">Conteúdos</div>
+      <h2 class="sec-title" data-i18n-html="art.h">Informe-se</h2></div>
+    </div>
+    <div class="articles">
+      <a class="art rv s-item" data-group="articles" data-title="liderança leadership" href="https://www.instagram.com/daniellaarraes.ma/" target="_blank" rel="noopener"><div class="th" style="--x:20%"><img src="assets/logo-mono.png" alt=""></div><div class="body"><span class="cat" data-i18n="art.c1">Liderança</span><h4 data-i18n="art.1">Como liderar equipes com clareza e empatia</h4><span class="more" data-i18n="art.more">Saiba mais</span></div></a>
+      <a class="art rv s-item" data-group="articles" data-title="comunicação communication" href="https://www.instagram.com/daniellaarraes.ma/" target="_blank" rel="noopener" style="--d:.08s"><div class="th" style="--x:55%"><img src="assets/logo-mono.png" alt=""></div><div class="body"><span class="cat" data-i18n="art.c2">Comunicação</span><h4 data-i18n="art.2">Comunicação que gera engajamento no dia a dia</h4><span class="more" data-i18n="art.more">Saiba mais</span></div></a>
+      <a class="art rv s-item" data-group="articles" data-title="feedback gestão management" href="https://www.instagram.com/daniellaarraes.ma/" target="_blank" rel="noopener" style="--d:.16s"><div class="th" style="--x:80%"><img src="assets/logo-mono.png" alt=""></div><div class="body"><span class="cat" data-i18n="art.c3">Gestão</span><h4 data-i18n="art.3">Feedback: de conversas difíceis a crescimento</h4><span class="more" data-i18n="art.more">Saiba mais</span></div></a>
+      <a class="art rv s-item" data-group="articles" data-title="carreira career desenvolvimento" href="https://www.instagram.com/daniellaarraes.ma/" target="_blank" rel="noopener" style="--d:.24s"><div class="th" style="--x:35%"><img src="assets/logo-mono.png" alt=""></div><div class="body"><span class="cat" data-i18n="art.c4">Carreira</span><h4 data-i18n="art.4">Desenvolver pessoas é estratégia de negócio</h4><span class="more" data-i18n="art.more">Saiba mais</span></div></a>
+    </div>
+    <div class="center"><a class="btn" href="https://www.instagram.com/daniellaarraes.ma/" target="_blank" rel="noopener"><span data-i18n="art.all">Veja mais no Instagram</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- COMPROMISSO -->
+<section class="pledge pad" id="compromisso">
+  <div class="wrap">
+    <div class="rv s-item" data-group="about" data-title="compromisso ética transparência commitment ethics"><div class="eyebrow" data-i18n="pl.eyebrow">Transparência</div>
+      <h2 class="sec-title" data-i18n-html="pl.h">Nosso <em>compromisso</em></h2></div>
+    <ul>
+      <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><div><b data-i18n="pl.1.t">Ética e confidencialidade</b><span data-i18n="pl.1.p">Todas as informações compartilhadas pelos clientes são tratadas com sigilo e responsabilidade.</span></div></li>
+      <li class="rv" style="--d:.1s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg><div><b data-i18n="pl.2.t">Resultados mensuráveis</b><span data-i18n="pl.2.p">Metas claras e indicadores acordados desde o início de cada projeto.</span></div></li>
+      <li class="rv" style="--d:.2s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg><div><b data-i18n="pl.3.t">Atendimento humano</b><span data-i18n="pl.3.p">Proximidade e escuta em cada etapa, do primeiro contato ao pós-projeto.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FRASE -->
+<section class="quote-band">
+  <div class="wrap rv">
+    <svg class="qm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.2 5C4.3 6.4 3 9.1 3 12.6V19h6.4v-6.4H6.2c0-2 .9-3.3 2.6-4.1zM17.2 5c-2.9 1.4-4.2 4.1-4.2 7.6V19h6.4v-6.4h-3.2c0-2 .9-3.3 2.6-4.1z"/></svg>
+    <blockquote data-i18n="quote.t">Transformar desafios sociais em oportunidades de desenvolvimento, conectando estratégia, pessoas e propósito para gerar impacto sustentável.</blockquote>
+    <cite>DANIELLA FERNANDES ARRAES<span data-i18n="team.reg">Administradora | CRA/MA nº 6840</span></cite>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2 class="rv" data-i18n-html="cta.h">QUER DESENVOLVER MAIS<br>A SUA EQUIPE?</h2>
+    <a class="btn dark rv" style="--d:.15s" href="https://wa.me/5598987065352" target="_blank" rel="noopener"><span data-i18n="cta.b">Agende uma conversa</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news">
+  <div class="wrap">
+    <p class="rv rv-l" data-i18n-html="news.p">Fique por dentro de conteúdos sobre liderança, comunicação e desenvolvimento de pessoas. <strong>Deixe o seu melhor e-mail.</strong></p>
+    <form id="nl" class="rv rv-r" novalidate>
+      <div class="field"><label class="sr" for="nlEmail">E-mail</label><input id="nlEmail" type="email" required autocomplete="email" data-i18n-ph="news.ph" placeholder="seu@email.com"><button type="submit" data-i18n="news.b">Assinar</button></div>
+      <label class="chk"><input type="checkbox" id="nlOk" required><span data-i18n="news.chk">Declaro que aceito receber comunicações da Dany Bless.</span></label>
+      <div class="msg" id="nlMsg" role="status"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><img src="assets/logo-full.png" alt="Dany Bless"></div>
+      <div><h5 data-i18n="ft.nav">Navegue</h5><ul>
+        <li><a href="#quem-somos" data-i18n="nav.about">Quem Somos</a></li>
+        <li><a href="#trajetoria" data-i18n="nav.about.path">Trajetória</a></li>
+        <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
+        <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#faca-parte" data-i18n="nav.join">Faça parte</a></li>
+        <li><a href="#conteudos" data-i18n="nav.read">Informe-se</a></li>
+        <li><a href="#compromisso" data-i18n="nav.ethics">Compromisso</a></li></ul></div>
+      <div><h5 data-i18n="ft.soc">Redes</h5><ul>
+        <li><a href="https://www.instagram.com/daniellaarraes.ma/" target="_blank" rel="noopener">Instagram @daniellaarraes.ma</a></li>
+        <li><a href="https://www.linkedin.com/in/daniellaarraes/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://wa.me/5598987065352" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+      <div><h5 data-i18n="ft.contact">Fale conosco</h5>
+        <p><strong>Daniella Fernandes Arraes</strong></p>
+        <p data-i18n="team.reg">Administradora | CRA/MA nº 6840</p>
+        <p>WhatsApp: <a href="https://wa.me/5598987065352" target="_blank" rel="noopener">(98) 98706-5352</a></p>
+        <p data-i18n="ft.loc">Atendimento presencial e online · Maranhão, Brasil</p></div>
+    </div>
+    <div class="copy"><span>© <span id="yr">2026</span> Dany Bless Treinamentos e Consultoria · Davi Arraes Góes <span data-i18n="ft.rights">Todos os direitos reservados</span></span><span>Daniella Arraes</span></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5598987065352" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+
+<!-- SEARCH MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="box">
+    <button class="close" id="closeSearch" aria-label="Fechar">×</button>
+    <h3 id="mTitle" data-i18n="top.filter">Filtrar por</h3>
+    <div class="row">
+      <input id="q" type="search" data-i18n-ph="srch.ph" placeholder="Buscar no site…" autocomplete="off">
+      <select id="grp" aria-label="Filtro">
+        <option value="all" data-i18n="srch.all">Todo o site</option>
+        <option value="services" data-i18n="srch.services">Serviços</option>
+        <option value="articles" data-i18n="srch.articles">Conteúdos</option>
+        <option value="projects" data-i18n="srch.projects">Projetos</option>
+        <option value="about" data-i18n="srch.about">Institucional</option>
+        <option value="join" data-i18n="srch.join">Faça parte</option>
+      </select>
+    </div>
+    <ul class="results" id="results"></ul>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
